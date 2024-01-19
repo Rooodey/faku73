@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <title>Wetter für morgen</title>
+</head>
+<body>
+    <h1>Wetter für morgen</h1>
+    <p>
+    <%= temp %>°C
+    <% switch (weather) {%> 
+    <%= case 'Clouds': %> <i class="fa-solid fa-cloud"></i>
+    <% break; %>
+    <% } %>
+    <%= summary %>
+    </p>
+</body>
+</html>
